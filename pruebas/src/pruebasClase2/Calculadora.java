@@ -26,6 +26,7 @@ public class Calculadora {
 		
 		System.out.println("5 - 2 = "+c.restar(5,2));
 		
+		System.out.println();
 		
 	}
 }

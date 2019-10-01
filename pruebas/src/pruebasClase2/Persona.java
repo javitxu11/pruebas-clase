@@ -28,6 +28,7 @@ public class Persona {
 		System.out.println(p.getNombre());
 		System.out.println(p.getApellido());
 		System.out.println(p.getNombreCompleto());
+		System.out.println();
 		
 	}
 }
