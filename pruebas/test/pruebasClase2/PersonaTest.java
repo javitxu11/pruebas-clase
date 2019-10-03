@@ -14,7 +14,15 @@ public class PersonaTest {
 	}
 	@Test
 	public void testGetNombreCompleto() {
-		assertEquals(p.getNombreCompleto(),"Gonzalez, Javi");
+		assertEquals("Gonzalez, Javi",p.getNombreCompleto());
 	}
-
+	
+	@Test
+	public void testGetNombre() {
+		assertEquals("Javi" , p.getNombre());
+	}
+	@Test
+	public void testGetApellido() {
+		assertEquals("Gonzalez",p.getApellido());
+	}
 }
