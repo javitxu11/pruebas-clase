@@ -10,8 +10,15 @@ public class Calculadora {
 	public int restar(int a, int b) {
 		return a -b;
 	}
+	
 	public int multiplicar(int a, int b) {
-		return a * b;
+		
+		int resultado=0;
+		for(int i=0;i<b;i++) {
+			resultado= resultado +a;
+		}
+		
+		return resultado;
 		
 	}
 	public double cuadrado(int a) {
