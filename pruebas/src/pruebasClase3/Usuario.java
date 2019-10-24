@@ -8,7 +8,7 @@ public class Usuario {
 		
 	private String login;
 	private String password;
-	private Date creationDate;
+	private Date creation_date;
 	
 	private static final SimpleDateFormat df= new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
 	public Usuario() {
@@ -31,19 +31,19 @@ public class Usuario {
 		this.password = password;
 	}
 
-	public Date getCreationDate() {
-		return creationDate;
+	public Date getCreation_date() {
+		return creation_date;
 	}
 
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
+	public void setCreation_date(Date creationDate) {
+		this.creation_date = creationDate;
 	}
 	
 	public String getCreationDateISO() {
-		return df.format(creationDate);
+		return df.format(creation_date);
 	}
 	
 	public void setCreationDateISO(String creationDate) throws ParseException {
-		this.creationDate = df.parse(creationDate);
+		this.creation_date = df.parse(creationDate);
 	}
 }
