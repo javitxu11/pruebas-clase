@@ -8,6 +8,7 @@ public class ComparadorApellido implements Comparator<Persona> {
 	public int compare(Persona a, Persona b) {
 		
 		return a.getApellido().compareTo(b.getApellido());
+		
 	}
 
 }
