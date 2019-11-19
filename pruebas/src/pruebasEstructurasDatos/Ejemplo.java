@@ -8,16 +8,18 @@ public class Ejemplo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			
-		List<Integer> enteros = new ArrayList<Integer>();
+		List<Persona> personas = new ArrayList<Persona>();
+		Persona p = new Persona("Pepe","Sanchez",35);
+		personas.add(p);
+		Persona j= new Persona("John","Dominguez",21);
+		personas.add(j);
+		Persona a = new Persona("Aner","Lekue",21);
+		personas.add(a);
 		
-		enteros.add(10);
-		enteros.add(3);
-		enteros.add(5);
+		Collections.sort(personas);
 		
-		Collections.sort(enteros);
-		
-		for ( Integer e: enteros) {
-			System.out.println(e);
+		for ( Persona pe: personas) {
+			System.out.println(pe);
 		}
 	}
 
