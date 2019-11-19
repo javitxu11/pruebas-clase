@@ -10,5 +10,4 @@ public class ComparadorApellido implements Comparator<Persona> {
 		return a.getApellido().compareTo(b.getApellido());
 		
 	}
-
 }
