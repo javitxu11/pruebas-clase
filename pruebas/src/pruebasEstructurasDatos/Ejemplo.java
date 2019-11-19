@@ -16,7 +16,7 @@ public class Ejemplo {
 		Persona a = new Persona("Aner","Lekue",21);
 		personas.add(a);
 		
-		Collections.sort(personas);
+		Collections.sort(personas, new ComparadorApellido());
 		
 		for ( Persona pe: personas) {
 			System.out.println(pe);

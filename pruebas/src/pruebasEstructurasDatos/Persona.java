@@ -1,6 +1,6 @@
 package pruebasEstructurasDatos;
 
-public class Persona {
+public class Persona implements Comparable<Persona> {
 
 	private String nombre;
 	private String apellido;
@@ -10,6 +10,11 @@ public class Persona {
 		this.nombre=nombre;
 		this.apellido=apellido;
 		this.edad=edad;
+	}
+
+	@Override
+	public String toString() {
+		return "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad;
 	}
 
 	public String getNombre() {
@@ -35,4 +40,13 @@ public class Persona {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	@Override
+	public int compareTo(Persona o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	
 }
