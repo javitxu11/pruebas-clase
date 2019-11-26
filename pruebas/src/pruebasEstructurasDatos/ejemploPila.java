@@ -32,7 +32,6 @@ public class ejemploPila {
 		enteros.add(5);
 		enteros.add(7);
 		enteros.add(13);
-		
 		imprimirRecursivo(enteros);
 		
 		
