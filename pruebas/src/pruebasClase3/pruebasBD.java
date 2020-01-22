@@ -55,6 +55,7 @@ public class pruebasBD {
 		
 		stmt.executeUpdate();
 	}
+	
 	public void guardar(Usuario usuario)throws SQLException {
 			String sql = "INSERT INTO usuario (login, password, creation_date) VALUES (?,?,?)";
 			PreparedStatement stmt = conn.prepareStatement(sql);
